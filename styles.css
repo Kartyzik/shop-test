@@ -45,3 +45,7 @@ body {
     background-color: rgba(225, 225, 225, 0.75);
     padding: 25px 0;
 }
+
+.logo {
+    margin-top: -7px;
+}
