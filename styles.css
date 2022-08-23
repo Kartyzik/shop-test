@@ -75,3 +75,44 @@ body {
     background-color: #2c71b8;
     color: white;
 }
+
+.search {
+    position: relative;
+    display: inline-block;
+    border: 1px solid #2c71b8;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 5px;
+}
+
+.search-area {
+    border: none;
+    background-color: transparent;
+    font: 1em sans-serif;
+    margin-left: 19px;
+}
+
+::placeholder {
+    color: #2c71b8;
+    font-size: 21px;
+    font-weight: 300;
+}
+
+.btn {
+    position: absolute;
+    border: none;
+    background-color: #2c71b8;
+    width: 30px;
+    height: 30px;
+    top: 4px;
+    right: 4px;
+}
+
+.basket {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    padding: 10px 11px;
+}
