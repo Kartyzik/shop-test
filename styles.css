@@ -16,7 +16,7 @@ body {
     margin: 0 auto;
 }
 
-.row::after, .menu::after {
+.row::after, .menu::after, .sub-menu::after {
     content: "";
     display: block;
     clear: both;
@@ -37,9 +37,7 @@ body {
     padding-right: 15px;
 }
 
-.col-9 {
-    width: 75%;
-}
+
 
 [class*="col-"] {
     float: left;
@@ -54,17 +52,18 @@ body {
     margin-top: 7px;
 }
 
-.menu li{
+.menu > li{
     float: left;
     width: 25%;
     border-left: 1px solid #2c71b8;
+    position: relative;
 }
 
 .menu:last-child {
     border-right: 1px solid #2c71b8;
 }
 
-.menu a{
+.menu > li > a{
     display: block;
     height: 50px;
     text-decoration: none;
@@ -75,26 +74,43 @@ body {
     font-weight: 300;
 }
 
-.menu a:hover {
+.menu >li > a:hover {
     background-color: #2c71b8;
     color: white;
 }
-/* 
+
 .menu > li:hover .sub-menu {
     display: block;
-    position: relative;
+    width: 286px;
+    background-color: #2c71b8;
+    left: -1px;
 }
 
 .sub-menu {
     display: none;
-    position: absolute;
-    background-color: #2c71b8;
-    top: 40px;
-    left: 10px;
-
+    position: absolute; 
 }
 
-.search {
+.sub-menu > li > a{
+    text-decoration: none;
+    color: white;
+    font-size: 21px;
+    font-weight: 300;
+    padding-left: 20px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.sub-menu > li > a:hover {
+    color: #2c71b8;
+}
+
+.sub-menu > li:hover  {
+    background-color: white;
+}
+
+
+/* .search {
     position: relative;
     display: inline-block;
     border: 1px solid #2c71b8;
@@ -102,9 +118,9 @@ body {
     height: 40px;
     line-height: 40px;
     margin-top: 5px;
-}
+} */
 
-.search-area {
+/* .search-area {
     border: none;
     background-color: transparent;
     font: 1em sans-serif;
@@ -115,9 +131,9 @@ body {
     color: #2c71b8;
     font-size: 21px;
     font-weight: 300;
-}
+} */
 
-.btn {
+/* .btn {
     position: absolute;
     border: none;
     background-color: #2c71b8;
@@ -125,9 +141,9 @@ body {
     height: 30px;
     top: 4px;
     right: 4px;
-}
+} */
 
-.basket {
+/* .basket {
     position: relative;
     display: inline-block;
     width: 40px;
@@ -137,9 +153,9 @@ body {
     margin-left: 30px;
     vertical-align: middle;
     margin-top: -3px;
-}
+} */
 
-.goods {
+/* .goods {
     position: absolute;
     width: 20px;
     height: 20px;
@@ -153,21 +169,11 @@ body {
     color: #fff;
 } */
 
-.form-search-header {
-    border: 1px solid #2c71b8;
-}
-.form-search-header input {
-    background-color: transparent;
-    border: none;
-}
 
-.form-search-header:focus {
-    outline: none;
-}
 
-.cart-header {
-    width: 40px;
-    height: 40px;
-    position:relative;
-    
+
+.slider {
+    height: 400px;
+    background-color: rgba(35, 90, 147, 0.75);
+    border-bottom: 1px solid white;
 }
