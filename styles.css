@@ -71,7 +71,7 @@ body {
     padding-right: 15px;
 }
 
-.header {
+.header, .footer {
     background-color: rgba(225, 225, 225, 0.75);
     padding: 25px 0;
 }
@@ -168,6 +168,15 @@ body {
     border: none;
     top: 4px;
     right: 4px;
+    background-image: url("image/icon\ \(4\).png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.form-search-header button:hover {
+    cursor: pointer;
+    background-color: #1f63a6;
+
 }
 
 ::placeholder {
@@ -179,10 +188,18 @@ body {
 .cart-header {
     width: 40px;
     height: 40px;
+    background-image: url("image/icon\ \(1\).png");
+    background-repeat: no-repeat;
+    background-position: center;
     background-color: white;
     position: relative;
     padding: 10px 12px 10px 10px;
     margin-top: 5px;
+}
+
+.cart-header:hover {
+    background-color: rgba(255, 255, 255, 0.614);
+    cursor: pointer;
 }
 
 .product-count {
@@ -206,6 +223,7 @@ body {
     border-bottom: 1px solid white;
 }
 
+
 .background:hover > a {
     background-color: #2c71b8;
     color: white;
@@ -215,6 +233,90 @@ body {
     position: relative;
 }
 
+.sidebar {
+    background-color: rgba(86, 141, 198, 0.7);
+    margin-top: 0;
+    border-right: 1px solid white;
+    padding: 33px 30px;
+}
+
+.device-type {
+    margin-bottom: 50px;
+}
+
+
+.form-title {
+    font-size: 21px;
+    font-weight: bold;
+    color: white;
+    padding-bottom: 26px;
+}
+
+label::before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border: 1px solid white;}
+
+.device-type input:checked + label::before {
+    background-color: white;
+    cursor: pointer;
+    
+}
+
+.device-type input {
+    display: none;
+}
+
+.list {
+    display: block;
+    color: white;
+    font-size: 21px;
+    font-weight: 300;
+    position: relative;
+    padding-bottom: 30px;
+}
+
+.list span {
+    position: absolute;
+    top: -5px;
+    left: 20px;
+    font-size: 21px;
+}
+
+.more-options {
+    display: block;
+    color: white;
+    font-size: 21px;
+    font-weight: 300;
+    background-color: transparent;
+    margin-left: 5px;
+    margin-top: -30px;
+    width: 100%;
+}
+
+.more-options:hover {
+    color: #dce5ee;
+    cursor: pointer;
+}
+
+.submit-btn {
+    background-color: #2c71b8;
+    color: white;
+    border: 1px solid white;
+    text-align: center;
+    width: 210px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 21px;
+    margin-top: 30px;
+}
+
+.submit-btn:hover {
+    background-color: #1f63a6;
+    cursor: pointer;
+}
 
 .arrow::after {
     content: "";
@@ -257,6 +359,10 @@ body {
     position: relative;
 }
 
+.nav > li > a:hover {
+    color: white;
+}
+
 
 .arrow-concole-1, .arrow-concole-2 {
     position: relative;
@@ -294,6 +400,11 @@ body {
 
 .menu-sort > li {
     position: relative;
+}
+
+.menu-sort > li > a:hover {
+    background-color: white;
+    color: #2c71b8;
 }
 
 .menu-sort > li > a{
@@ -360,81 +471,127 @@ body {
     background-size: 18px 18px;
 
 }
+
+.arrow-white:hover:after {
+    content: "";
+    background-image: url('image/arrow.png');
+    display: block;
+    position: absolute;
+    left: 230px;
+    top: 10px;
+    width: 18px;
+    height: 18px;
+    background-size: 18px 18px;
+}
+
 .product {
-    z-index: 8;
+    height: 683px;
 }
 
 .product-image{
-    background-color: rgba(202, 219, 237, 72%); 
-    padding: 45px 88px;
+    background-color: rgba(202, 219, 237, 72%);  
+    background-repeat: no-repeat;
+    height: 180px;
+    background-position: center;
+    display: block;
     margin-top: 50px;
     position: relative;
 }
 
-.product-image-2 {
-    background-color: rgba(202, 219, 237, 72%); 
-    padding: 48px 80px;
-    margin-top: 50px;
-    position: relative;
+.product-1 {
+    background-image: url("image/icon\ \(17\).png");
+    background-position: center;
 }
 
-.product-image-3 {
-    background-color: rgba(202, 219, 237, 72%); 
-    padding: 39px 103px;
-    margin-top: 50px;
-    position: relative;
+.product-2 {
+    background-image: url("image/icon\ \(9\).png");
+    background-position: center;
 }
 
-.product-image-4 {
-    background-color: rgba(202, 219, 237, 72%); 
-    padding: 60px 85px;
-    margin-top: 50px;
-    position: relative;
+.product-3 {
+    background-image: url("image/icon\ \(10\).png");
+    background-position: center;
 }
 
-.product-image-5 {
-    background-color: rgba(202, 219, 237, 72%); 
-    padding: 40px 100px;
-    margin-top: 50px;
-    position: relative;
+.product-4 {
+    background-image: url("image/icon\ \(16\).png");
+    background-position: center;
 }
 
-.product-image-6 {
-    background-color: rgba(202, 219, 237, 72%); 
-    padding: 39px 103px;
-    margin-top: 50px;
-    position: relative;
+.product-5 {
+    background-image: url("image/icon\ \(14\).png");
+    background-position: center;
+}
+
+.product-6 {
+    background-image: url("image/icon\ \(12\).png");
+    background-position: center;
+}
+
+.product-7 {
+    background-image: url("image/icon\ \(15\).png");
+    background-position: center;
 }
 
 
 .zoom {
     position: absolute;
     top: 10px;
-    left: 230px;
-    border: #2c71b8 1px solid;
-    padding: 4px;
-    width: 31px;
+    right: 10px;
+    background-image: url("image/icon8.png");
+    background-repeat: no-repeat;
+    width: 30px;
     height: 30px;
+    border: #2c71b8 1px solid;
+    background-position: center;
+    background-size: 20px 20px;
+
+}
+
+.zoom:hover {
+    background-color: #2c71b8;
+    cursor: pointer;
+    background-image: url("image/icon\ \(6\).png");
 }
 
 .like {
     position: absolute;
     top: 50px;
-    left: 230px;
+    right: 10px;
     border: #2c71b8 1px solid;
-    width: 31px;
+    width: 30px;
     height: 30px;
-    padding: 6px 5px;
+    background-image: url("image/like-blue.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px 20px;
+}
+
+.like:hover {
+    background-color: #2c71b8;
+    cursor: pointer;
+    background-image: url("image/icon\ \(7\).png");
+    
 }
 
 .like-blue {
     position: absolute;
     top: 50px;
-    left: 230px;
-    background-color: #2c71b8;
+    right: 10px;
+    border: #2c71b8 1px solid;
     width: 30px;
     height: 30px;
-    padding: 7px 6px;
+    background-color: #2c71b8;
+    background-image: url("image/icon\ \(7\).png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px 20px;
+}
+
+.like-blue:hover {
+    background-color: rgba(202, 219, 237, 72%);
+    background-image: url("image/like-blue.png");
+    cursor: pointer;
 }
 
 .product-title {
@@ -511,6 +668,11 @@ body {
     margin-left: 29px;
 }
 
+.btn-details:hover {
+    background-color: #1f63a6;
+    cursor: pointer;
+}
+
 .btn-add {
     position: relative;
     color: white;
@@ -520,6 +682,11 @@ body {
     margin-top: 15px;
     border: none;
     background-color: rgba(86, 141, 198, 0.6);
+}
+
+.btn-add:hover {
+    background-color: rgba(114, 159, 207, 0.732);
+    cursor: pointer;
 }
 
 .btn-add::after {
@@ -537,4 +704,21 @@ body {
 .about-product {
     border: solid 1px white;
     padding-bottom: 30px;
+}
+
+.load-more {
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    color: white;
+    font-size: 36px;
+    font-weight: 300;
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+
+.footer-text {
+    display: block;
+    color: #2c71b8;
+    text-align: center;
 }
