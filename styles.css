@@ -717,6 +717,10 @@ label::before {
     margin-bottom: 80px;
 }
 
+.load-more:hover {
+    color: #dce5ee;
+}
+
 .footer-text {
     display: block;
     color: #2c71b8;
